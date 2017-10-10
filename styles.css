@@ -1,0 +1,122 @@
+body{
+  margin: 0;
+  font-family: 'Lobster', cursive;
+  background-image: url(https://www.sitegratisgratis.com.br/wp-content/uploads/2014/12/tumblr_static_preto-fundo-madeira-mais-escura-1024x1280.jpg);
+  color: #e89717;
+}
+
+nav{
+  display: flex;
+}
+
+.banner{
+  width: 100%;
+}
+
+.titulo{
+  width: 50%;
+}
+
+.telefone{
+  width: 50%;
+  text-align: right;
+}
+
+.selecao{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selecao div{
+  position: relative;
+  width: 33.3%;
+}
+
+.selecao img{
+  width: 100%;
+}
+
+.selecaocarne{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selecaocarne div{
+  position: relative;
+  width: 50%;
+}
+
+.selecaocarne img{
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  font-family: 'Lobster', cursive;
+  margin: 10px 0;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+button{
+  font-family: 'Lobster', cursive;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 7px 25px;
+  margin-left: 40%;
+}
+
+.modal{
+  display: none;
+  width: 45%;
+  height: 30%;
+  border: 1px solid black;
+  background-color: #ccc8c1;
+  position: fixed;
+  left: 25%;
+  top: 25%;
+  border-radius: 12px;
+  text-align: center;
+  opacity: 0.97;
+}
+
+.botaoConfirmar{
+  margin-left: 0;
+}
+
+@media(max-width: 600px){
+  body{
+    font-size: 15px;
+  }
+
+  nav{
+    display: block;
+  }
+
+  .titulo{
+    width: 100%;
+    text-align: center;
+  }
+
+  .telefone{
+    width: 100%;
+    text-align: center;
+  }
+
+  .centralizaMobile{
+    text-align: center;
+  }
+
+  button{
+    margin-left: 25%;
+  }
+
+  .modal{
+    width: 70%;
+    height: 24%;
+    left: 15%;
+  }
+
+
+}

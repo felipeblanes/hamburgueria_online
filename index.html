@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Hamburgueria Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  </head>
+  <body class="body">
+
+    <!-- <img src="images/fundo.jpg" class="fundo"> -->
+    <header>
+      <nav>
+        <h1 class="titulo">Hamburgueria Online</h1>
+        <h2 class="telefone">Telefone: (11) 99999-9999</h2>
+      </nav>
+      <section>
+        <img src="images/banner.jpg" class="banner">
+      </section>
+    </header>
+
+    <section class="centralizaMobile">
+      <h1>Monte seu lanche!</h1>
+      <!-- Selecao do Pao -->
+      <h2>Pão:</h2>
+      <div class="selecao">
+        <div onclick="selecionarTradicional()">
+          <img src="images/tradicional.jpg" id="tradicional">
+          <h3>Tradicional</h3>
+        </div>
+
+        <div onclick="selecionarGergelim()">
+          <img src="images/gergelim.jpg" id="gergelim">
+          <h3>Gergelim</h3>
+        </div>
+
+        <div onclick="selecionarAustraliano()">
+          <img src="images/australiano.jpg" id='australiano'>
+          <h3>Australiano</h3>
+        </div>
+      </div>
+
+      <!-- Selecao do Hamburguer -->
+      <h2>Hamburguer:</h2>
+      <div class="selecaocarne">
+        <div onclick="selecionarCarne()">
+          <img src="images/carne.jpg" id='carne'>
+          <h3>Picanha</h3>
+          <h3 class="preco">R$ 20,00</h3>
+        </div>
+
+        <div onclick="selecionarFrango()">
+          <img src="images/frango.jpg" id='frango'>
+          <h3>Frango</h3>
+          <h3 class="preco">R$ 15,00</h3>
+        </div>
+
+        <div onclick="selecionarVegetariano()">
+          <img src="images/vegetariano.jpg" id='vegetariano'>
+          <h3>Vegetariano</h3>
+          <h3 class="preco">R$ 18,00</h3>
+        </div>
+
+        <div onclick="selecionarSalmao()">
+          <img src="images/salmao.jpg" id='salmao'>
+          <h3>Salmão da Malásia</h3>
+          <h3 class="preco">R$ 35,00</h3>
+        </div>
+      </div>
+
+
+      <!-- Selecao do Toppings -->
+      <h2>Topping:</h2>
+      <div class="selecao">
+        <div onclick="selecionarMussarela()">
+          <img src="images/mussarela.jpg" id="mussarela">
+          <h3>Mussarela</h3>
+          <h3 class="preco">R$ 3,00</h3>
+        </div>
+
+        <div onclick="selecionarCheddar()">
+          <img src="images/cheddar.jpg" id="cheddar">
+          <h3>Cheddar</h3>
+          <h3 class="preco">R$ 5,00</h3>
+        </div>
+
+        <div onclick="selecionarSalada()">
+          <img src="images/salada.jpg" id="salada">
+          <h3>Salada</h3>
+          <h3 class="preco">R$ 2,00</h3>
+        </div>
+
+        <div onclick="selecionarBacon()">
+          <img src="images/bacon.jpg" id="bacon">
+          <h3>Bacon</h3>
+          <h3 class="preco">R$ 4,00</h3>
+        </div>
+
+        <div onclick="selecionarMaionese()">
+          <img src="images/maionese.jpg" id="maionese">
+          <h3>Maionese</h3>
+          <h3 class="preco">R$ 3,00</h3>
+        </div>
+
+        <div onclick="selecionarFeijao()">
+          <img src="images/feijao.jpg" id="feijao">
+          <h3>Feijão Chines</h3>
+          <h3 class="preco">R$ 7,00</h3>
+        </div>
+
+      </div>
+
+    </section>
+
+    <form class="" action="index.html" method="post">
+      <input type="text" placeholder="Nome">
+      <input type="text" placeholder="Endereco">
+      <button type="button" onclick="abrirModal()">Enviar Pedido</button>
+    </form>
+
+    <div class="modal">
+      <p>Obrigado por enviar seu pedido. </p>
+      <p id="somaCompra"></p>
+      <!-- Completar texto. Criar uma funcao para somar itens selecionados -->
+      <button onclick="ocultarModal()" class="botaoConfirmar">Confirmar Pedido</button>
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
